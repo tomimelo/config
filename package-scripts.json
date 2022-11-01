@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node .",
+    "restart": "rm -rf build && npm run start",
+    "test": "mocha",
+    "test:watch": "npm run test -- -w --recursive",
+    "lint": "eslint **/*.ts",
+    "lint:fix": "eslint **/*.ts --fix",
+    "format": "prettier **/*.ts --write"
+  }
+}
